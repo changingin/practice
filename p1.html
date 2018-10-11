@@ -7,13 +7,20 @@
 <style>
   .btn {
    text-decoration:none;
+   font-size:2rem;
   }
  </style>
 </head>
+  
+  
+  
+  
 <body>
-
 <h1>1. let's make two botton - with [a]tag </h1> 
-  <h2> 설명 </h2>
+  <h2> 만드는 법 설명 </h2>
+  
+  
+  
 <pre> 
 1. 먼저 Blue 라는 링크와, Red 라는 링크를 각각 만든다 
 
@@ -36,15 +43,39 @@
  [/style]
 [/head] 
 
+4.폰트 크기가 너무 작아서, 기본 크기인 16px(1rem)의 두 배인 32px(2rem)로 
+  폰트 크기를 변경한다. 
+[head] 
+ [style]
+  .btn {
+   text-decoration:none;
+   font-size:2rem;
+ }
+ [/style]
+[/head]   
 
+5. 링크의 배경 컬러를 blue와 red로 설정한다. 
 
+[head] 
+ [style]
+  .btn {
+   text-decoration:none;
+   font-size:2rem;
+ }
+  .btn.blue{
+   background-color:#1f75d9;
+  }
+ [/style]
+[/head]  
+
+6. 글꼴 
 </pre>
 
   
   <h3> 결과 </h3>
   <pre>
-  <a href="#blue"> blue </a>
-  <a href="#red"> red </a>
+  <a class="btn blue" href="#blue"> blue </a>
+  <a class="btn red" href="#red"> red </a>
  
  
  
