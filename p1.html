@@ -17,7 +17,7 @@
   }
   
    .btn:active {
-    transform:translateY(10px);
+    transform:translateY(3px);
    }
   
   .btn.blue{
@@ -28,6 +28,7 @@
   .btn.blue:active{
     border-bottom:2px solid #165195;
   }
+  
  </style>
 </head>
   
@@ -222,6 +223,7 @@
 
 
 
+
 14. blue버튼(.btn.blue)을 눌렀을 때 (active) 아래(bottom) 테두리(border)의 두께가 얇아지면 (기존5px > 2px)
     눌려지는 느낌을 줄 수 있다. 
 
@@ -231,9 +233,14 @@
 
 
 
-15.
 
-
+15.더 정교한 효과를 위해 버튼(.btn)을 눌렀을 때 , (active) Y축으로 움직이는(translateY) 거리를
+    버튼(.btn) 아래(bottom) 테두리(border)가 얇아지는 정도(5px-2px)와 같게 설정해 보자. 
+   
+   .btn:active {
+    transform:translateY(10px   >   3px );
+   }
+ 
 
 
 16.
