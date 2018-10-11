@@ -13,6 +13,7 @@
    margin:20px;
    display:inline-block;
    border-radius:10px;
+   transition: all 0.1s;
   }
   
    .btn:active {
@@ -21,6 +22,7 @@
   
   .btn.blue{
    background-color:#1f75d9;
+   border-bottom:5px solid #165195;
   }
  </style>
 </head>
@@ -187,8 +189,51 @@
     transform:translateY(10px);
    }
    
+12. 움직임을 부드럽게 하기 위해서 장면전환(transition)효과를 적용한다. 
+   모든 속성에 대해서 (all) 변경되었을 때 0.1초(0.1s) 동안 
+   장면전환 (transition)을 적용한다. 
 
 
+  .btn {
+   text-decoration:none;
+   font-size:2rem;
+   color:white;
+   padding: 10px 20px 10px 20px;
+   margin:20px;
+   display:inline-block;
+   border-radius:10px;
+   transition: all 0.1s;
+}
+ 
+ 
+ 
+ 
+13. blue 버튼에 입체감을 주기 위해서 버튼 아래에(bottom) 테두리(border)를 5px두께 만큼 
+    보통 실선 (solid)으로설정하고 컬러(color)를 버튼의 색보다 더 진한색(#165195)으로 설정한다. 
+ 
+   .btn.blue{
+   background-color:#1f75d9;
+   border-bottom:5px solid #165195;
+  }
+ 
+
+
+
+14. blue버튼을 눌렀을 때 (active) 아래(bottom) 테두리(border)의 두께가 얇아지면 (기존5px > 2px)
+    눌려지는 느낌을 줄 수 있다. 
+
+ .btn.blue:active {
+  border-bottom:2px solid #165195;
+ }
+
+
+
+15.
+
+
+
+
+16.
 
 
 
