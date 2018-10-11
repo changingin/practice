@@ -42,6 +42,12 @@
   pre{
    font-size:18px; 
   }
+  li {
+   color:green; 
+  }
+  div {
+   color:red; 
+  }
  </style>
 </head>
   
@@ -56,23 +62,24 @@
   
 <pre> 
 
-
-1. 먼저 Blue 라는 링크와, Red 라는 링크를 각각 만든다 
+<ol>
+<li>먼저 Blue 라는 링크와, Red 라는 링크를 각각 만든다. </li>
 
   [a href="#blue"] blue [/a]
   [a href="#red"] red [/a]
 
 
 
-2. 링크를 버튼 모양으로 만들어 보자. 
- - 먼저 각 링크에 클래스 값을 준다. 
+<li> 링크를 버튼 모양으로 만들어 보자. 
+ - 먼저 각 링크에 클래스 값을 준다. </li>
  
   [a class="btn blue" href="#blue"] blue [/a]
   [a class="btn red"  href="#red"] red [/a]
 
 
 
-3. 두 버튼(.btn)이 전형적인 링크처럼 보이지 않기 위해 밑줄을 없애 준다. 
+
+<li>두 버튼(.btn)이 전형적인 링크처럼 보이지 않기 위해 밑줄을 없애 준다. </li>
 
 [head] 
  [style]
@@ -85,8 +92,8 @@
 
 
 
-4. 두 버튼 (.btn)의 폰트 크기가 너무 작아서, 
-  기본 크기인 16px(1rem)의 두 배인 32px(2rem)로 폰트 크기를 변경한다. 
+<li>두 버튼 (.btn)의 폰트 크기가 너무 작아서, 
+  기본 크기인 16px(1rem)의 두 배인 32px(2rem)로 폰트 크기를 변경한다. </li>
  
  [style]
   .btn {
@@ -100,7 +107,7 @@
 
 
 
-5.'blue'버튼(.btn.blue) 의 배경 컬러를 blue로 설정한다. 
+<li>'blue'버튼(.btn.blue) 의 배경 컬러를 blue로 설정한다. </li>
 
 [style]
   .btn {
@@ -117,7 +124,7 @@
 
 
 
-6. 두 버튼(.btn) 텍스트 글꼴이 파란색이라서 흰색으로 바꿔준다. 
+<li> 두 버튼(.btn) 텍스트 글꼴이 파란색이라서 흰색으로 바꿔준다. <li>
 
   .btn {
    text-decoration:none;
@@ -130,8 +137,8 @@
  
 
 
-7. 두 버튼(.btn)의 배경색 테두리와 글자 사이의 간격을 padding을 활용하여 적용한다. 
-  (상 , 우,  하,  좌  ) 순서로 크기px를 적용하자. 
+<li> 두 버튼(.btn)의 배경색 테두리와 글자 사이의 간격을 padding을 활용하여 적용한다. 
+  (상 , 우,  하,  좌  ) 순서로 크기px를 적용하자. </li>
 
   .btn {
    text-decoration:none;
@@ -143,8 +150,8 @@
 
 
 
-8. 두 버튼(.btn)이 화면 위쪽에 딱 달라붙는 게 싫어서 
-모니터 화면과 버튼의 거리 (margin)을 20px로 설정하자. 
+<li> 두 버튼(.btn)이 화면 위쪽에 딱 달라붙는 게 싫어서 
+모니터 화면과 버튼의 거리 (margin)을 20px로 설정하자. </li>
 
   .btn {
    text-decoration:none;
@@ -157,12 +164,12 @@
 
 
 
-9.  버튼(.btn)으로 만들
+<li> 버튼(.btn)으로 만들
     [a] tag는 inline level의 tag라서 margin값이 (좌,우)만 적용되고
-    (상,하)는 적용되지 않으므로 두 버튼 (.btn)의 display를 inline-block으로 바꿔준다. 
+    (상,하)는 적용되지 않으므로 두 버튼 (.btn)의 display를 inline-block으로 바꿔준다. </li>
     
-    * display를 block으로 바꾸면 blue버튼과 red 버튼이 줄바꿈이 되면서
-     좌우로 배열되지 않고 상하로 배열되기 때문이다. 
+    <div>* display를 block으로 바꾸면 blue버튼과 red 버튼이 줄바꿈이 되면서
+     좌우로 배열되지 않고 상하로 배열되기 때문이다. </div>
      
 
   .btn {
@@ -178,7 +185,7 @@
 
 
 
-10. 두 버튼(.btn)의 모서리를 둥글게 하기위해서 모서리(border)의 반지름(radius)을 10px정도 적용한다. 
+<li> 두 버튼(.btn)의 모서리를 둥글게 하기위해서 모서리(border)의 반지름(radius)을 10px정도 적용한다. </li>
  
   .btn {
    text-decoration:none;
@@ -194,9 +201,9 @@
  
 
 
-11. 두 버튼(.btn)을 클릭했을 때 눌리는 효과를 주기 위해서, 클릭했을 때 버튼의 위치를 바꿔줘야한다. 
- * class값이 btn인 버튼들이 눌렸을 때 (active) 변화를 주는데 (transform) 
-   아래로 (Y방향) 10px정도 이동(translate)하게 한다.
+<li> 두 버튼(.btn)을 클릭했을 때 눌리는 효과를 주기 위해서, 클릭했을 때 버튼의 위치를 바꿔줘야한다. </li>
+ <div>* class값이 btn인 버튼들이 눌렸을 때 (active) 변화를 주는데 (transform) 
+   아래로 (Y방향) 10px정도 이동(translate)하게 한다. </div>
    
    .btn:active {
     transform:translateY(10px);
@@ -206,9 +213,9 @@
    
    
    
-12. 두 버튼 (.btn) 움직임을 부드럽게 하기 위해서 장면전환(transition)효과를 적용한다. 
+<li> 두 버튼 (.btn) 움직임을 부드럽게 하기 위해서 장면전환(transition)효과를 적용한다. 
    모든 속성에 대해서 (all) 변경되었을 때 0.1초(0.1s) 동안 
-   장면전환 (transition)을 적용한다. 
+   장면전환 (transition)을 적용한다. </li>
 
 
   .btn {
@@ -225,8 +232,8 @@
  
  
  
-13. blue 버튼(.btn.blue)에 입체감을 주기 위해서 버튼 아래에(bottom) 테두리(border)를 5px두께 만큼 
-    보통 실선 (solid)으로설정하고 컬러(color)를 버튼의 색보다 더 진한색(#165195)으로 설정한다. 
+<li>blue 버튼(.btn.blue)에 입체감을 주기 위해서 버튼 아래에(bottom) 테두리(border)를 5px두께 만큼 
+    보통 실선 (solid)으로설정하고 컬러(color)를 버튼의 색보다 더 진한색(#165195)으로 설정한다. </li>
  
    .btn.blue{
    background-color:#1f75d9;
@@ -237,8 +244,8 @@
 
 
 
-14. blue버튼(.btn.blue)을 눌렀을 때 (active) 아래(bottom) 테두리(border)의 두께가 얇아지면 (기존5px > 2px)
-    눌려지는 느낌을 줄 수 있다. 
+<li>blue버튼(.btn.blue)을 눌렀을 때 (active) 아래(bottom) 테두리(border)의 두께가 얇아지면 (기존5px > 2px)
+    눌려지는 느낌을 줄 수 있다. </li>
 
  .btn.blue:active {
   border-bottom:2px solid #165195;
@@ -248,8 +255,8 @@
 
 
 
-15.더 정교한 효과를 위해 버튼(.btn)을 눌렀을 때 , (active) Y축으로 움직이는(translateY) 거리를
-    버튼(.btn) 아래(bottom) 테두리(border)가 얇아지는 정도(5px-2px)와 같게 설정해 보자. 
+<li>더 정교한 효과를 위해 버튼(.btn)을 눌렀을 때 , (active) Y축으로 움직이는(translateY) 거리를
+    버튼(.btn) 아래(bottom) 테두리(border)가 얇아지는 정도(5px-2px)와 같게 설정해 보자. </li>
    
    .btn:active {
     transform:translateY(10px   >   3px );
@@ -258,9 +265,8 @@
 
 
 
-
-16. 두 버튼의 (.btn) 텍스트가 버튼에 세겨진 느낌을 주기 위해서 텍스트(text)에 그림자 (shadow)를 넣어준다. 
-    좌 (-x ) 우 ( x )   /   상 (-y)  하 (y) 거리 값을 설정하고 그림자 색을 검은색(black)으로 설정한다. 
+<li> 두 버튼의 (.btn) 텍스트가 버튼에 세겨진 느낌을 주기 위해서 텍스트(text)에 그림자 (shadow)를 넣어준다. 
+    좌 (-x ) 우 ( x )   /   상 (-y)  하 (y) 거리 값을 설정하고 그림자 색을 검은색(black)으로 설정한다. </li>
 
 
   .btn {
@@ -280,7 +286,7 @@
 
 
 
-17. red버튼 (.btn.red)도 똑같이 적용해 준다. 
+<li> red버튼 (.btn.red)도 똑같이 적용해 준다. </li>
 
   .btn.red{
    background-color:#ff521e;
@@ -292,9 +298,9 @@
   }
 
 
-18. 완성 !!
+<li> 완성 !!</li>
 
-
+</ol>
 
 
 
