@@ -10,6 +10,12 @@
           background-size:cover;
           background-position: center center;
         }
+      .thumbnail.round {
+          border-radius:20px;
+        }
+     .thumbnail.circle {
+          border-radius:100%;
+        }
   </style>
 
 
@@ -103,12 +109,73 @@
       
       
       
- <li>     </li>
+ <li>  테두리가 둥근 썸네일을 만들어 보자.
+      먼저 class 값이 .thumbnail round인 [div]태그를 하나 더 만들자.
  
- <li>     </li>
+ </li>
+   
+      [div class="thumbnail round" style="background-image:url('thumbnail.jpg')" ]
+
+    
  
+ 
+ 
+ 
+ <li> class 값에 .thumbnail 과 .round 값이 있는 [div]태그의  
+      테두리 반지금 (border-radius)값을 20px정도 줘 보자. </li>
+      
+      
+      [style]
+        .thumbnail.round {
+          border-radius:20px;
+        }
+      [/style]
   
   
+  
+  
+  
+  <li>   테두리가 원인 썸네일을 만들어 보자.  
+       먼저 class 값이 .thumbnail round인 [div]태그를 하나 더 만들자.
+   </li>
+  
+     [div class="thumbnail circle" style="background-image:url('thumbnail.jpg')" ]
+
+  
+  
+  
+  
+  
+  
+  
+  <li>   class 값에 .thumbnail 과 .circle 값이 있는 [div]태그의  
+          테두리 반지금 (border-radius)값을 100%로 설정하자.  </li>
+  
+   [style]
+        .thumbnail.circle {
+          border-radius:100%;
+        }
+   [/style]
+  
+  
+  
+  
+  <li>   만약, 썸네일들에 테두리(border) 효과를 주고 싶으면   
+          .thumbnail 에서 border: 두께, 종류, 색상;   순서로 
+  </li>
+   
+   [style]
+        .thumbnail {
+          width:200px;
+          height:200px;
+          background-size:cover;
+          background-position: center center;
+          border: 2px solid gray;
+        }
+      [/style]
+  
+  
+
   </ol>
   </pre>
   
@@ -117,7 +184,9 @@
    <h3> 결과 </h3>
   
   <div class="thumbnail" style="background-image:url('thumbnail.jpg')" >
-    
+  <div class="thumbnail round" style="background-image:url('thumbnail.jpg')" >
+  <div class="thumbnail circle" style="background-image:url('thumbnail.jpg')" >
+
   </div>
   
   
