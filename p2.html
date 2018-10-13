@@ -7,7 +7,7 @@
         .thumbnail {
           width:150px;
           height:150px;
-        
+          background-size:cover;
         }
   </style>
 
@@ -42,6 +42,8 @@
      [ /div ]
      
   
+  
+  
   <li>  [div]태그에 class값을 설정해요. (.thumbnail)   </li>
   
   
@@ -50,10 +52,12 @@
   
   
   
+  
  <li>  [ div ] 태그에 배경화면으로 설정된 이미지의 크기(width,height)를 지정하기 위해 
        [style] 태그를 써서 화면에 나타낸다. 
+        
+       = 그러면 원본 파일의 좌측, 상면이 화면에 나타난다. 
  </li>
- 
  
       [style]
         .thumbnail {
@@ -63,8 +67,20 @@
         }
       [/style]
  
- <li>     </li>
  
+ 
+ 
+ <li>  원본 이미지의 좌측, 상면부터 설정한 크기만큼 (150px, 150px) 잘라 오는 것이 아니라 
+       원본 이미지의 좌측, 상면부터 설정한 비율만큼 (1:1)  축소, 확대해서 (150px, 150px)에 
+         맞추어 가져오게 하려면 크기를(background-size) cover로 설정한다.  </li>
+ 
+         [style]
+        .thumbnail {
+          width:150px;
+          height:150px;
+          background-size:cover;
+        }
+      [/style]
  <li>     </li>
  
  <li>     </li>
