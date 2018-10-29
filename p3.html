@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <title> practice page3</title>
 
-
+ <style>
+   #기둥 {
+   column-width:300px;
+   }
+  </style>
 
 
 
@@ -24,42 +28,75 @@
   <li> [figure]tag와 [img]와[figcaption]를 사용해 사진들을 넣는다. </li>
 
  [figure]
- [img src="air.jpg"}
+ [img src="air.jpg"]
  [figcaption] air [/figcaption]
  [/figure]
  
   [figure]
- [img src="fire.jpg"}
+ [img src="fire.jpg"]
  [figcaption] fire [/figcaption]
  [/figure]
  
   [figure]
- [img src="fruit.jpg"}
+ [img src="fruit.jpg"]
  [figcaption] fruit [/figcaption]
  [/figure]
  
   [figure]
- [img src="sea.jpg"}
+ [img src="sea.jpg"]
  [figcaption] sea [/figcaption]
  [/figure]
  
   [figure]
- [img src="star.jpg"}
+ [img src="star.jpg"]
  [figcaption] star [/figcaption]
  [/figure]
  
   [figure]
- [img src="tree.jpg"}
+ [img src="tree.jpg"]
  [figcaption] tree [/figcaption]
  [/figure]
  
   [figure]
- [img src="water.jpg"}
+ [img src="water.jpg"]
  [figcaption] water [/figcaption]
  [/figure]
  
-  <li>  </li>
-  <li>  </li>
+  <li> [div]tag로 [figure]tag들을 감싼다.  </li>
+  
+  - 여기에 id값으로 "기둥"을 준다 - 
+  
+  
+  
+  [div id="기둥"]
+  
+  
+  [figure]
+ [img src="air.jpg"]
+ [figcaption] air [/figcaption]
+ [/figure]
+  .
+  .
+  .
+  [figure]
+ [img src="water.jpg"]
+ [figcaption] water [/figcaption]
+ [/figure]
+  
+  
+  [/div]
+  
+  
+  <li> id값이 "기둥"인 [div]tag에 대해서 기둥 폭을 300px로 설정한다. </li>
+  
+  - 그러면 화면창의 크기가 변해도 한 기둥의 폭이 300px로 고정된다. 
+  
+  [style]
+   #기둥 {
+   column-width:300px;
+   }
+  [/style]
+  
   <li>  </li>
   <li>  </li>
   <li>  </li>
@@ -79,7 +116,7 @@
   
    <h3> 결과 </h3>
   
-  
+ <div id="기둥">
  <figure>
  <img src="air.jpg">
  <figcaption> air </figcaption>
@@ -115,7 +152,7 @@
  <figcaption> water </figcaption>
   </figure>
 
-
+  </div>
 
   
   
