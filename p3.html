@@ -7,9 +7,12 @@
  <style>
 
   
-   #기둥 {
+   #columns {
    column-width:350px;
    }
+    #columns figure{
+    display:inline-block;
+    }
   </style>
 
 
@@ -27,7 +30,12 @@
   <pre>
   <ol>
   
-  <li> [figure]tag와 [img]와[figcaption]를 사용해 사진들을 넣는다. </li>
+  <li> 화면에 사진들과 사진 설명을 넣는다. </li>
+  
+* [figure]tag와 [img]tag로 사진을 넣고 
+  [figcaption]tag를 사용해 사진설명을 넣는다.
+
+
 
  [figure]
  [img src="air.jpg"]
@@ -64,15 +72,19 @@
  [figcaption] water [/figcaption]
  [/figure]
  
-  <li> [div]tag로 [figure]tag들을 감싼다.  </li>
+ 
+ 
+ 
+ 
+  <li> [img]을 여러 기둥 형태로 만들기 위해 [div]를 사용한다.  </li>
   
-  - 여기에 id값으로 "기둥"을 준다 - 
+  [div]tag로 [figure]tag들을 감싸고
+  [div]tag의 ID 값을 "columns"로 설정한다.
   
   
   
-  [div id="기둥"]
-  
-  
+  [div id="columns"]
+ 
   [figure]
  [img src="air.jpg"]
  [figcaption] air [/figcaption]
@@ -84,23 +96,44 @@
  [img src="water.jpg"]
  [figcaption] water [/figcaption]
  [/figure]
-  
-  
+ 
   [/div]
   
   
-  <li> id값이 "기둥"인 [div]tag에 대해서 기둥 폭을 350px로 설정한다. </li>
   
-  - 그러면 화면창의 크기가 변해도 한 기둥의 폭이 300px로 고정된다. 
+  
+  <li> 각각의 기둥의 넓이를 350px 정도로 설정한다.</li>
+  
+  [div]tag의 기둥 폭을 350px로 설정한다.
+  (화면창의 크기가 변해도 한 기둥의 폭이 350px로 고정된다.) 
   
   [style]
-   #기둥 {
-   column-width:300px;
+   #columns {
+   column-width:350px;
    }
   [/style]
   
-  <li>  </li>
-  <li>  </li>
+  
+  
+  
+  <li> 이미지와 텍스트가 분리되지 않게 설정한다.  </li>
+  
+ [div]tag 안에 있는  [figure]tag의 display를 inline-block으로 설정한다.
+  
+   [style]
+   #columns {
+   column-width:350px;
+   }
+   
+    #columns figure{
+    display:inline-block;
+    }
+  [/style]
+  
+  
+  
+  
+  <li>   </li>
   <li>  </li>
   <li>  </li>
   <li>  </li>
