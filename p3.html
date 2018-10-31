@@ -5,13 +5,18 @@
 <title> practice page3</title>
  
  <style>
-
-  
+ li{
+  color:green;
+  }
+  #notice{
+   border:5px solid red;
+  }
    #columns {
    column-width:350px;
    }
     #columns figure{
     display:inline-block;
+    margin:0;
     }
    #columns figure img{
      width:100%;
@@ -125,13 +130,11 @@
  [div]tag 안에 있는  [figure]tag의 display를 inline-block으로 설정한다.
   
    [style]
-   #columns {
-   column-width:350px;
-   }
    
     #columns figure{
     display:inline-block;
     }
+    
   [/style]
   
   
@@ -139,26 +142,48 @@
   
   <li>  이미지가 기둥에 딱 들어가도록 이미지 크기를 설정한다.  </li>
     
+    <div id="notice">
+    * 이미지가 깨지는 등 문제가 생겼을 때, 해결하기 위해 먼저 각각의 [tag]들이 
+      화면에서 차지하는 부피를 알기 위해 테두리를 치는 습관을 기르자. 
+      
+  ex)    
+    [tag] {
+     border:5px solid green;
+     }
+    </div>
+    
     - 기둥 안의 [figure]tag안의 [img]tag의 크기를 100%로 설정해. 
      figure 안으로 img를 딱 넣어준다. 
      
-        [style]
-   #columns {
-   column-width:350px;
-   }
+  [style]
+
+     #columns figure img{
+        width:100%;
+       }
+       
+  [/style]
+  
+  
+  
+  <li> 이미지들 간의 거리를 좁혀주기 위해 [figure]의 margin값을 조절한다. </li>
+  - 이미지간 간격이 떨어져 있으면 보기 싫다. 
+  - 왜 떨어져 있는지 검사하기 위해 '우클릭' > '검사'를 해서 보면 
+   [figure]는 기본적으로 "상하 margin = 16px, 좌우 margin = 40px "을 갖고 있다.
+  - margin값을 '0'으로 설정한다.
+  
+     [style]
    
     #columns figure{
     display:inline-block;
-    }
-    
-    #columns figure img{
-     width:100%;
+    margin:0;
     }
   [/style]
   
   
   
-  <li>  </li>
+  
+  
+  
   <li>  </li>
   <li>  </li>
   <li>  </li>
