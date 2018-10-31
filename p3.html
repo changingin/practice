@@ -13,10 +13,12 @@
   }
    #columns {
    column-width:350px;
+   column-gap:15px;
    }
     #columns figure{
     display:inline-block;
     margin:0;
+    margin-bottom:15px;
     }
    #columns figure img{
      width:100%;
@@ -39,6 +41,7 @@
   <pre>
   <ol>
   
+ 
   <li> 화면에 사진들과 사진 설명을 넣는다. </li>
   
 * [figure]tag와 [img]tag로 사진을 넣고 
@@ -117,9 +120,11 @@
   (화면창의 크기가 변해도 한 기둥의 폭이 350px로 고정된다.) 
   
   [style]
+  
    #columns {
    column-width:350px;
    }
+   
   [/style]
   
   
@@ -152,6 +157,8 @@
      }
     </div>
     
+    
+    
     - 기둥 안의 [figure]tag안의 [img]tag의 크기를 100%로 설정해. 
      figure 안으로 img를 딱 넣어준다. 
      
@@ -165,18 +172,55 @@
   
   
   
+  
   <li> 이미지들 간의 거리를 좁혀주기 위해 [figure]의 margin값을 조절한다. </li>
   - 이미지간 간격이 떨어져 있으면 보기 싫다. 
   - 왜 떨어져 있는지 검사하기 위해 '우클릭' > '검사'를 해서 보면 
    [figure]는 기본적으로 "상하 margin = 16px, 좌우 margin = 40px "을 갖고 있다.
   - margin값을 '0'으로 설정한다.
   
-     [style]
+  [style]
    
     #columns figure{
     display:inline-block;
     margin:0;
     }
+    
+  [/style]
+  
+    
+  
+  
+  <li> 세밀하게 column 간의 간격 조절하기 </li>
+  
+  -margin값을 없애주고 나서도 column간의 간격을 조절하고 싶으면 'column-gap'을 사용한다.
+   우선 15px을 적용시켜 보자.
+   
+  [style]
+  
+   #columns {
+   column-width:350px;
+   column-gap:15px;
+   }
+   
+  [/style]
+  
+  
+  
+  
+  <li> [frame]사이의 간격도 조절해 보자. </li>
+  
+  - column 과 column 의 간격은 조절 됐지만 [frame]사이의 간격이 붙어있다.
+  - [frame]에 margin-bottom 값을 15px정도 설정해서 간격을 두자.
+  
+   [style]
+   
+    #columns figure{
+    display:inline-block;
+    margin:0;
+    margin-bottom:15px;
+    }
+    
   [/style]
   
   
@@ -184,8 +228,6 @@
   
   
   
-  <li>  </li>
-  <li>  </li>
   <li>  </li>
   <li>  </li>
   <li>  </li>
