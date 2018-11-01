@@ -5,6 +5,9 @@
 <title> practice page3</title>
  
  <style>
+  body{
+   font-size:20px;
+  }
  li{
   color:green;
   }
@@ -19,13 +22,15 @@
     display:inline-block;
     margin:0;
     margin-bottom:15px;
-    border:1px solid rgba(0,0,0,0.2)
+    border:1px solid rgba(0,0,0,0.2);
+    padding:10px;
     }
    #columns figure img{
      width:100%;
     }
     #columns figure figcaption{
-       border-top:1px solid rgba(0,0,0,0.2)
+       border-top:1px solid rgba(0,0,0,0.2);
+       padding:10px;
     }
   </style>
 
@@ -243,7 +248,7 @@
     display:inline-block;
     margin:0;
     margin-bottom:15px;
-    border:1px solid rgba(0,0,0,0.2)
+    border:1px solid rgba(0,0,0,0.2);
     }
     
   [/style]
@@ -258,14 +263,48 @@
   [style]
   
     #columns figure figcaption{
-       border-top:1px solid rgba(0,0,0,0.2)
+       border-top:1px solid rgba(0,0,0,0.2);
     }
     
   [/style]
   
-  <li>  </li>
+  
+  
+  
+  <li> caption이 [figure]의 테두리에 딱 붙는 게 보기 싫다. </li>
+  
+   -[figcaption]에 padding 값을 줘서, caption을 [figure]의 테두리에서 떼어 놓자.
+   
+   [style]
+  
+    #columns figure figcaption{
+       border-top:1px solid rgba(0,0,0,0.2);
+       padding:10px;
+    }
+    
+   [/style]
 
-  <li>  </li>
+
+
+
+  <li> [figure]의 테두리가 img,caption 에서 조금 멀어지게 padding값을 준다. </li>
+  
+    [style]
+  
+    #columns figure{
+    display:inline-block;
+    margin:0;
+    margin-bottom:15px;
+    border:1px solid rgba(0,0,0,0.2);
+    padding:10px;
+    }
+    
+  [/style]
+  
+  
+  
+  
+  
   <li>  </li>  
   
 
