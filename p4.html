@@ -23,21 +23,41 @@
  <h3> 결과 </h3>
   
   <input type="checkbox"> 
-  
+  <label for=""> root <label>
+   
+   
   
   <h2> 만드는 법 설명 </h2>
  <pre>
  <ol>
- <li>  </li>
+ <li> 우선 화면에 체크박스를 하나 만든다. </li>
  
- <li>  </li>
+   [input type="checkbox"]
+   
+   
+   
+   
+ <li> 체크박스에 설명을 추가하기 위해 [label]을 사용한다. </li>
+  
+  [input type="checkbox"]
+  [label for=""] root [label]
+  
+  
+  
  
+ <li> [label]이 어떤 [tag]를 가리키는지 확실히 한다. </li>
  
- <li>  </li>
+ *[label]이 뭐를 가리키는 건지 설정하기 위해 for 값을 설정하고, [input]에 id값도 준다.
+  (둘이 한 몸이 된다.)
+ * 그렇게 하면 checkbox를 눌러도 label 값을 눌러도 작동한다.
  
- 
- 
- <li>  </li>
+  [input type="checkbox" id="strt"]
+  [label for="strt"] root [label]
+  
+  
+  
+  
+  <li> [label]/checkbox를 눌렀을 때 아래에 나타날 [ul],[li] 만들어 준다. </li>
  
  
  
