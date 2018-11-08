@@ -14,7 +14,9 @@
  input[type="checkbox"]{
    display:none;
   }
- 
+   input[type="checkbox"]:checked~ul{
+   display:none;
+  }
  
  </style>
 </head>
@@ -27,8 +29,13 @@
   <input type="checkbox"> 
   <label for=""> root <label>
    
+   <ul>
+    <li> node1 </li>
+    
+   </ul>
    
   
+   
   <h2> 만드는 법 설명 </h2>
  <pre>
  <ol>
@@ -47,11 +54,13 @@
   
   
  
- <li> [label]이 어떤 [tag]를 가리키는지 확실히 한다. </li>
+ <li> [label]이 어떤 [tag]를 가리키는지 확실히 한다.   
+       = [label]와 [input]의 일체화 </li>
  
- *[label]이 뭐를 가리키는 건지 설정하기 위해 for 값을 설정하고, [input]에 id값도 준다.
-  (둘이 한 몸이 된다.)
- * 그렇게 하면 checkbox를 눌러도 label 값을 눌러도 작동한다.
+ *[input]에 id값을 주고,
+  [label]이 뭐를 가리키는 건지 설정하기 위해 for 값을 [input]의 id값으로 설정한다.
+    (둘이 한 몸이 된다.)
+ * 그렇게 하면 checkbox를 눌러도, label 값을 눌러도 동일하게 작동한다.
  
   [input type="checkbox" id="strt"]
   [label for="strt"] root [label]
@@ -72,8 +81,8 @@
    
  
  <li> checkbox 모양을 없앤다. </li>
- * check박스 display를 none으로 해도 check박스와 label이 연결되어 있기 때문에 
-   여전히 작동한다. 
+ * check박스 display를 none으로 해도 check박스와 [label]이 연결되어 있기 때문에 
+   [label]만 눌러도 여전히 check박스의 기능이 작동한다. 
  * CSS를 사용해서, check 박스를 선택할 때 [tag]이름이 아닌  "속성"선택자를 사용해 보자.
  * [input] 중에 'type' 속성이 "checkbox"인 [tag]를 선택해서 display를 none으로 한다.
  * "속성"을 선택할 때는 [  ]  중괄호를 사용한다.
@@ -86,11 +95,23 @@
   }
  [/style]
  
- <li>  </li>
  
  
  
- <li>  </li>
+ <li> check 박스를 눌렀을 때, [ul]가 사라지도록 설정한다. </li>
+ * 모든 [input] 중에 type="checkbox"인 [tag]가 checked 됐을 때, 
+  그 다음에 등장하는 (~) [ul]이 사라지게 (display:none;)으로 만들자. 
+  
+  [style]
+  input[type="checkbox"]:checked~ul{
+   display:none;
+  }
+ [/style]
+ 
+ 
+ 
+ 
+ <li> tree 두번째 영상에서 계속!!! </li>
  
  
  
