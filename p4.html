@@ -11,7 +11,9 @@
   color:green;
  }
  
- 
+ input[type="checkbox"]{
+   display:none;
+  }
  
  
  </style>
@@ -58,12 +60,31 @@
   
   
   <li> [label]/checkbox를 눌렀을 때 아래에 나타날 [ul],[li] 만들어 준다. </li>
+     
+   [input type="checkbox" id="strt"]
+   [label for="strt"] root [label]
+ 
+   [ul]
+   
+   [li]  node1  [/li]
+   
+   [/ul]
+   
+ 
+ <li> checkbox 모양을 없앤다. </li>
+ * check박스 display를 none으로 해도 check박스와 label이 연결되어 있기 때문에 
+   여전히 작동한다. 
+ * CSS를 사용해서, check 박스를 선택할 때 [tag]이름이 아닌  "속성"선택자를 사용해 보자.
+ * [input] 중에 'type' 속성이 "checkbox"인 [tag]를 선택해서 display를 none으로 한다.
+ * "속성"을 선택할 때는 [  ]  중괄호를 사용한다.
+
  
  
- 
- <li>  </li>
- 
- 
+ [style]
+  input[type="checkbox"]{
+   display:none;
+  }
+ [/style]
  
  <li>  </li>
  
