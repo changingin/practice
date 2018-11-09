@@ -11,10 +11,10 @@
   color:green;
  }
  
- input[type="checkbox"]{
+ .tree input[type="checkbox"]{
    display:none;
   }
-   input[type="checkbox"]:checked~ul{
+   .tree input[type="checkbox"]:checked~ul{
    display:none;
   }
  
@@ -26,6 +26,8 @@
  
  <h3> 결과 </h3>
   
+ <ul class="tree">
+  <li>
   <input type="checkbox"> 
   <label for="checkbox"> root </label>
    
@@ -33,8 +35,8 @@
     <li> node1 </li>
     
    </ul>
-   
-  
+  </li>
+ </ul>
    
   <h2> 만드는 법 설명 </h2>
  <pre>
